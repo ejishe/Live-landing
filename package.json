@@ -4,7 +4,7 @@
   "description": "Live landing page",
   "sourse": "index.html",
   "scripts": {
-    "sass:watch": "sass --style=expanded --watch styles:dist"
+    "sass:watch": "sass --style=expanded --watch styles:dist",
   },
   "repository": {
     "type": "git",
