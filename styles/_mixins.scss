@@ -8,3 +8,24 @@
     row-gap: $rgap ;
 
 }
+
+@mixin font($size:16px, $weight:400,$color:#fff, $style:normal ){
+    font: {
+        size:$size;
+        weight:$weight;
+        style: $style;
+    }
+    color: $color;
+}
+
+@mixin pos($pos:relative, $zin:1, $inset:-1, $top-or-bottom: top, $left-or-right:left, $value1:0, $value2:0){
+    position: $pos;
+    z-index: $zin;
+    @if $inset > -1{
+        inset: $inset;
+    }
+    @else{
+        #{$top-or-bottom}: $value1;
+        #{$left-or-right}: $value2; 
+    }
+}

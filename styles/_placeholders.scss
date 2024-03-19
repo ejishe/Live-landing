@@ -7,6 +7,15 @@
     }
 }
 
+%hover-white{
+    &:hover{
+
+        cursor:pointer;
+        color: v.$color-white;
+    }
+}
+
+
 %hover-black-icon{
     &:hover{
 
